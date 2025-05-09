@@ -5,10 +5,10 @@ import json
 # URLs de los endpoints
 api_urls = {
     "Embedings": "http://127.0.0.1:8000/gemini/Embedings",
-    "ModeloEn": "http://127.0.0.1:8000/gemini/ModeloEn"
+    "ModeloEn": "http://127.0.0.1:8000/gemini/ModeloEn",
+    "Ollama": "http://127.0.0.1:8000/ollama",
 }
 
-# Definir los JSON por defecto
 json_defaults = {
     "Embedings": {
         "Monto": 6667,
@@ -18,6 +18,20 @@ json_defaults = {
         "Intentos_Fallidos": 0
     },
     "ModeloEn": {
+        "type_CASH_IN": 0.0,
+        "type_CASH_OUT": 0.0,
+        "type_PAYMENT": 1.0,
+        "type_TRANSFER": 0.0,
+        "amount": 34799.63,
+        "type_2_CC": 0.0,
+        "type_2_CM": 1.0,
+        "day": 11,
+        "part_of_the_day_madrugada": 0.0,
+        "part_of_the_day_mañana": 1.0,
+        "part_of_the_day_noche": 0.0,
+        "part_of_the_day_tarde": 0.0
+    },
+    "Ollama": {
         "type_CASH_IN": 0.0,
         "type_CASH_OUT": 0.0,
         "type_PAYMENT": 1.0,
